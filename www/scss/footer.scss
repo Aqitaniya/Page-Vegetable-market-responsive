@@ -1,0 +1,200 @@
+footer{
+  border-top: 5px solid $orange-color;
+  bottom: 0;
+  color: $tabele-header-color;
+  height: 200px;
+  position: absolute;
+  width: 100%;
+}
+  footer .container{
+    padding: 15px;
+  }
+  .contacts-about-soc{
+    float: left;
+    width: 50%;
+  }
+    .contacts-about{
+      width: 100%;
+    }
+      .contacts-info{
+        float: left;
+        width: 50%;
+      }
+        .contacts-info p,
+        .about-info a,
+        .text-info p {
+          font-size: 130%;
+        }
+        .contacts-info .site-logo{
+          height: $logo-img-height/2;
+          margin-bottom: 10px;
+          width: $logo-img-width/2;
+        }
+        .contacts-info .site-name{
+          font-size: 150%;
+          text-align: left;
+          width: 140px;
+        }
+        .contacts-info p{
+          text-align: left;
+        }
+      .about-info{
+        float: left;
+        width: 50%;
+      }
+        .about-info a{
+          color: $tabele-header-color;
+        }
+        .about-info ul li{
+          list-style: none;
+          padding: 4px 0;
+        }
+      .soc-info{
+        padding-top: 5px;
+        width: 100%;
+      }
+        .soc-info a{
+          margin-right: 5px;
+
+        }
+    .text-info{
+      float: left;
+      width: 50%;
+    }
+      .text-info p{
+        line-height: 180%;
+      }
+@media (max-width: 800px){
+  .contacts-about-soc{
+    @include align-items();
+    clear: both;
+    @include flex();
+    width: 100%;
+  }
+    .contacts-about{
+      @include align-items();
+      @include flex();
+      float: left;
+      width: 75%;
+    }
+      .contacts-info{
+        width: 50%;
+      }
+        .contacts-info p:not(.site-name){
+          margin-left: $logo-img-width*0.75;
+        }
+      .about-info{
+        width: 50%;
+      }
+        .about-info ul{
+          padding-left: 0;
+        }
+          .about-info ul li{
+            margin-top: 30px;
+          }
+          .about-info ul li:nth-child(3),
+          .about-info ul li:nth-child(4),
+          .about-info ul li:nth-child(5){
+            display: none;
+          }
+      .soc-info{
+        float: left;
+        width: 25%;
+      }
+        .soc-info a{
+          margin: 9%;
+        }
+    .text-info{
+      clear: both;
+      padding-top: 30px;
+      width: 100%;
+    }
+}
+
+@media (max-width: 705px) {
+  .soc-info a{
+    margin: 0;
+  }
+    .soc-info a img{
+      margin: 9%;
+    }
+}
+
+@media (max-width: 545px){
+  .contacts-about{
+    width: 90%;
+  }
+  .contacts-info{
+    width: 60%;
+  }
+  .about-info{
+    width: 40%;
+  }
+  .soc-info{
+    width: 10%;
+  }
+}
+
+@media (max-width: 340px){
+  .contacts-about-soc{
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+  .contacts-about{
+    clear: both;
+    display: block;
+    width: 100%;
+  }
+  .contacts-info{
+    clear: both;
+    position: relative;
+    width: 100%;
+  }
+    .contacts-info p:not(.site-name){
+      margin-left: 0;
+      text-align: center;
+    }
+    .contacts-info .site-logo{
+      left:20%;
+      position: absolute;
+      top:55px;
+    }
+    .contacts-info .site-name{
+      text-align: center;
+      margin: 60px $logo-img-height/2 10px $logo-img-height;
+      width: 80%;
+    }
+  .about-info{
+    clear: both;
+    width: 100%;
+  }
+    .about-info ul{
+      padding-left: 0;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+      .about-info ul li{
+        border-top: 1px solid $tab-gradtent-color;
+        border-bottom: 1px solid $tab-gradtent-color;
+        @include flex();
+        margin: 0;
+        padding: 15px 0;
+      }
+        .about-info ul li a{
+          margin: 0 auto;
+          text-align: center;
+        }
+  .soc-info{
+    clear: both;
+    padding:0 22%;
+    width:100%;
+  }
+    .soc-info a{
+      margin: 0 13px;
+      margin: 9%;
+    }
+    .soc-info a img{
+      margin: 0;
+    }
+}

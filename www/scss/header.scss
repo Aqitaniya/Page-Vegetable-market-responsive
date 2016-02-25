@@ -1,0 +1,194 @@
+header{
+  border-bottom: 1px solid $border-color;
+  box-shadow: 0 4px 3px -3px $border-color;
+  height: 100px;
+}
+.header-content{
+  @include align-items();
+  @include flex();
+  height: 100px;
+}
+.site-logo{
+  height: $logo-img-height;
+  width: $logo-img-width;
+}
+.site-name{
+  color:$orange-color;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 250%;
+  text-transform: uppercase;
+  margin: auto 10px;
+  width:22%;
+}
+.time-info{
+  display: inline-block;
+  font-size: 130%;
+  text-align: center;
+  padding-left: 2%;
+  width: 35%;
+}
+.bidding-state{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 200%;
+  text-transform: uppercase;
+  width: 26%;
+
+}
+.open-md,
+.open-sm{
+  color: $green-color;
+}
+.end-md,
+.end-sm{
+  color: $red-color;
+}
+.end-md,
+.open-sm,
+.end-sm,
+.time-bidding-sm{
+  display: none;
+}
+.btn{
+  border-bottom: $orange-border-color solid 1px;
+  color: $table-rates-color;
+  display: inline-block;
+  font-size: 150%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px $text-shadow-color, 1px 0 1px $white-color;
+}
+.btn:hover{
+  color: $table-rates-color;
+  opacity: 0.8;
+}
+.checkin,
+.checkin:active,
+.checkin:focus{
+  background: $orange-color;
+  background: linear-gradient(to top, $orange-color, $yellow-color);
+  color: $table-rates-color;
+  margin: auto 10px;
+}
+.login,
+.login:active,
+.login:focus{
+  background: $orange-color;
+  background: linear-gradient(to top, $yellow-color, $orange-color);
+  color: $table-rates-color;
+}
+
+@media (max-width: 1200px) {
+  .site-name{
+    font-size: 210%;
+    width:29%;
+  }
+  .time-info{
+    width: 35%;
+  }
+  .bidding-state {
+    font-size: 170%;
+    margin: auto 10px;
+    text-align: center;
+    width: 25%;
+  }
+  .btn{
+    font-size: 135%;
+  }
+}
+
+@media (max-width: 800px) {
+  .time,
+  .open-md,
+  .end-md,
+  .open-sm,
+  .time-bidding-md{
+    display: none;
+  }
+  .end-sm,
+  .time-bidding-sm{
+    display: inline-block;
+  }
+  .site-name{
+    font-size: 200%;
+    width:30%;
+  }
+  .time-info{
+    font-size: 120%;
+    text-align: center;
+    padding-left: 0;
+    width: 45%;
+  }
+  .bidding-state{
+    font-size: 120%;
+    position: relative;
+    text-align: center;
+    width: 90%;
+
+  }
+  .btn{
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .site-logo{
+  }
+  .site-name{
+    width:35%;
+  }
+  .time-info{
+    width: 40%;
+  }
+  .bidding-state{
+    width: 80%;
+  }
+}
+@media (max-width: 650px){
+  .site-name{
+    font-size: 150%;
+    width:40%;
+  }
+  .time-info{
+    font-size: 100%;
+    width: 35%;
+  }
+  .bidding-state{
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 340px){
+  header{
+    height: 290px;
+  }
+  .header-content{
+    display: block;
+    height: 290px;
+  }
+  .site-logo{
+    margin-left: 10px;
+  }
+  .site-name{
+    font-size: 200%;
+    display: inline-block;
+    margin: 20px 0 auto 0;
+    width:75%;
+  }
+  .time-info{
+    font-size: 180%;
+    margin: 20px 0 10px 0;
+    width: 100%;
+  }
+  .bidding-state{
+  }
+  .btn{
+    background: $orange-color;
+    background: linear-gradient(to top, $yellow-color, $orange-color);
+    display: block;
+    margin: 10px auto;
+    font-size: 150%;
+    width: 95%;
+  }
+}

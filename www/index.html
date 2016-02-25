@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vegetable-market</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Play&subset=latin,cyrillic,cyrillic-ext,latin-ext'
+          rel='stylesheet' type='text/css'>
+    <link href="lib/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <img class="site-logo" src="img/bow.png" alt="logo">
+        <p class="site-name text-center">Овощная биржа</p>
+        <div class="time-info">
+            <p class="time">
+                <time>Среда, 12.01.2016, 18.26</time>
+            </p>
+            <p class="time-bidding-md"><strong>Торги проводятся с 18-16 в будние дни</strong></p>
+            <p class="time-bidding-sm"><strong>Торги с 18-16 в будние дни</strong></p>
+            <p class="bidding-state open-sm">Торги открыты</p>
+            <p class="bidding-state end-sm">Торги завершены</p>
+        </div>
+        <p class="bidding-state open-md text-left">Торги открыты</p>
+        <p class="bidding-state end-md text-left">Торги завершены</p>
+        <a href="#" class="btn checkin"><span>Вход</span></a>
+        <a href="#" class="btn login"><span>Регистрация</span></a>
+    </div>
+</header>
+<main>
+    <div class="container main-content">
+        <ul class="nav nav-tabs text-center">
+            <li class="active"><a href="#tab1" data-toggle="tab">Предложение</a></li>
+            <li><a href="#tab2" data-toggle="tab">Спрос</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>Товар</td>
+                            <td>Продавец</td>
+                            <td class="text-center">Общее кол-во (кг)</td>
+                            <td class="text-center">Мин. партия (кг)</td>
+                            <td class="text-center">Калибр (см.)</td>
+                            <td class="text-center">Цена (р/кг)</td>
+                            <td>Регион</td>
+                            <td class="text-center">Ставки</td>
+                            <td></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-container text-center">
+                    <a href="#" class="btn btn-more-lots">Больше лотов <i class="fa fa-angle-down"></i></a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>Товар</td>
+                            <td>Продавец</td>
+                            <td class="text-center">Общее кол-во (кг)</td>
+                            <td class="text-center">Мин. партия (кг)</td>
+                            <td class="text-center">Калибр (см.)</td>
+                            <td class="text-center">Цена (р/кг)</td>
+                            <td>Регион</td>
+                            <td class="text-center">Ставки</td>
+                            <td></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-container text-center">
+                    <a href="#" class="btn btn-more-lots">Больше лотов <i class="fa fa-angle-down"></i></a>
+                </div>
+            </div>
+            <div class="tab-pane table-responsive" id="tab2">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>Товар</td>
+                            <td>Продавец</td>
+                            <td class="text-center">Общее кол-во (кг)</td>
+                            <td class="text-center">Мин. партия (кг)</td>
+                            <td class="text-center">Калибр (см.)</td>
+                            <td class="text-center">Цена (р/кг)</td>
+                            <td>Регион</td>
+                            <td class="text-center">Ставки</td>
+                            <td></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-container text-center">
+                    <a href="#" class="btn btn-more-lots">Больше лотов <i class="fa fa-angle-down"></i></a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>Товар</td>
+                            <td>Продавец</td>
+                            <td class="text-center">Общее кол-во (кг)</td>
+                            <td class="text-center">Мин. партия (кг)</td>
+                            <td class="text-center">Калибр (см.)</td>
+                            <td class="text-center">Цена (р/кг)</td>
+                            <td>Регион</td>
+                            <td class="text-center">Ставки</td>
+                            <td></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        <tr>
+                            <td>лук репчатый</td>
+                            <td>пархоменко а.м.</td>
+                            <td class="text-center">20 000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">45</td>
+                            <td class="col-region">Волгоградская обл.</td>
+                            <td class="col-rates text-center">35</td>
+                            <td class="text-center"><a href="#" class="btn-bet">Сделать ставку</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-container text-center">
+                    <a href="#" class="btn btn-more-lots">Больше лотов <i class="fa fa-angle-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="footer">
+    <div class="container">
+        <div class="contacts-about-soc">
+            <div class="contacts-about">
+                <div class="contacts-info">
+                    <img class="site-logo" src="img/bow.png" alt="logo">
+                    <p class="site-name">Овощная биржа</p>
+                    <p>ИНН 7017330440</p>
+                    <p>8-800-5555-933</p>
+                    <p>info@supl.biz</p>
+                </div>
+                <div class="about-info">
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Реквизиты ООО Сапл-биз</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="soc-info">
+                <a href="#"><img src="img/f.png" alt="f"></a>
+                <a href="#"><img src="img/t.png" alt="f"></a>
+                <a href="#"><img src="img/b.png" alt="f"></a>
+            </div>
+        </div>
+        <div class="text-info">
+            <p>Бесплатная электронная торговая площадка для малого бизнеса.
+                Может использоваться в качестве канала сбыта.
+                Подходит для поиска поставщиков и закупки товаров.
+                Удобна для реализации товаров и услуг.
+                Упрощает продажи в регионы.</p>
+            <p>Конкурсы, аукционы, тендеры, котировки.
+                Поиск покупателей, заказчиков, поставщиков.
+                Малый и средний бизнес, микробизнес, ИП. Товары, услуги, работы, продукты, продукция.
+                Отзывы.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/table.js"></script>
+</body>
+</html>

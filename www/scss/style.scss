@@ -1,0 +1,54 @@
+$font-stack:    Play, sans-serif;
+
+$primary-text-color: #484848;
+$tabele-header-color: #838383;
+$table-button-color: #d0d0d0;
+$tab-gradtent-color: #e3e3e3;
+$table-rates-color: #fff1e6;
+$table-border-color:#e9d6d2;
+$border-color: #d3aea7;
+$orange-color:  #f3975e;
+$text-shadow-color:#ca822e;
+$orange-border-color: #d48520;
+$green-color:   #7ba934;
+$red-color: #cf3e3e;
+$yellow-color:  #ffad03;
+$black-color: #000000;
+$white-color: #ffffff;
+
+$logo-img-height:58px;
+$logo-img-width:57px;
+
+@mixin flex() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin align-items() {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin linear-gradient($color1, $color2){
+  background: -webkit-linear-gradient(bottom, $color1, $color2);
+  background: linear-gradient(to top, $color1, $color2);
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  color: $primary-text-color;
+  font: 100% $font-stack;
+  margin-bottom: 200px;
+  min-width: 340px;
+}
+
+@import 'header';
+@import 'tabs';
+@import 'footer';

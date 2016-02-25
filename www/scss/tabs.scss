@@ -1,0 +1,132 @@
+main{
+  margin-top:40px;
+}
+  .nav-tabs li:first-child{
+    padding-right: 20px;
+  }
+  .nav-tabs .nav-justified{
+    height: 40px!important;
+    border: none;
+    width: 60%;
+  }
+  .nav-tabs li {
+    border-bottom: 3px solid $orange-color;
+    width: 50%;
+  }
+    .nav-tabs li a {
+      height: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 180%;
+    }
+    .nav-tabs li:not(.active) a{
+      background-color: $white-color;
+      @include linear-gradient($tab-gradtent-color, $white-color);
+      color: $black-color;
+    }
+    .nav-tabs li:not(.active) a:hover{
+      background-color: $white-color;
+      @include linear-gradient($white-color, $tab-gradtent-color);
+    }
+    .nav-tabs li.active a,
+    .nav-tabs li.active a:active,
+    .nav-tabs li.active a:focus {
+      background-color: $orange-color;
+      border: none;
+      color: $white-color;
+    }
+    .nav-tabs li.active a:hover{
+      background-color: $yellow-color;
+      @include linear-gradient($orange-color, $yellow-color);
+
+      border: none;
+      color: $white-color;
+    }
+.tab-content table{
+  border-bottom: 4px solid $orange-color;
+  //-webkit-box-shadow: 0px 20px 40px -20px $border-color;
+  //-moz-box-shadow: 0px 20px 40px -20px $border-color;
+  box-shadow: 0px 20px 40px -20px $border-color;
+  margin-top:20px;
+  text-transform: uppercase;
+  font-size: 120%;
+}
+  .tab-content table thead{
+    background-color: $tabele-header-color;
+    color: $white-color;
+  }
+    .tab-content table tr{
+      height: 40px;
+    }
+      .tab-content table tr td{
+        vertical-align: middle;
+      }
+      .tab-content table thead tr td{
+        border: 1px solid $tabele-header-color;
+      }
+      .tab-content table tbody tr:hover {
+        background-color:$table-rates-color;
+      }
+      .tab-content table tbody tr td{
+        border: 1px solid $table-border-color;
+      }
+      .tab-content table tbody tr td:first-child{
+        font-weight: bold;
+      }
+.btn-bet,
+.btn-bet:active,
+.btn-bet:focus{
+  background-color: $table-button-color;
+  border-radius: 5px;
+  color: $white-color;
+  padding: 7px 20px;
+  text-decoration: none;
+  width: 100px;
+}
+.btn-bet:focus{
+  @extend .login;
+  text-decoration: none;
+}
+.btn-bet:hover{
+  color: $white-color;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.col-region{
+  text-transform: capitalize;
+}
+.col-rates{
+  background-color: $table-rates-color;
+}
+
+.btn-container{
+  position:relative;
+  top:-21px;
+  width: 100%;
+}
+.btn-more-lots{
+  @extend .login;
+}
+.btn-more-lots i{
+  margin-left: 10px;
+}
+@media (max-width: 340px){
+  body{
+    min-width: 340px;
+  }
+  .nav-tabs li:first-child {
+    width: 70%;
+  }
+  .nav-tabs li:last-child {
+    width: 30%;
+  }
+  table tbody td:nth-child(8){
+    background-color: $white-color;
+  }
+  .table tbody tr td{
+    font-weight: bold;
+  }
+  .btn-more-lots{
+    width: 50%;
+  }
+}
